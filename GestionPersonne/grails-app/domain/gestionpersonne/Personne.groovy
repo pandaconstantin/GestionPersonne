@@ -6,6 +6,8 @@ class Personne {
      String ville
      String pays
      String telephone
-    static constraints = {
+    static hasMany = [formations:Formation]
+    public String toString(){
+        return id ;
     }
 }
